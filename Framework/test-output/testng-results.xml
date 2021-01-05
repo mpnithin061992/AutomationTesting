@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[Setting up reports and Test started]]>
+    </line>
+    <line>
+      <![CDATA[Setting Done - Test can be started]]>
+    </line>
+    <line>
+      <![CDATA[Trying to start browser and getting application ready]]>
+    </line>
+    <line>
+      <![CDATA[Browser and Application is up and running]]>
+    </line>
+    <line>
+      <![CDATA[Test is about to end]]>
+    </line>
+    <line>
+      <![CDATA[Test completed >>>>> Reports are generated]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="50923" started-at="2020-07-23T13:38:43 IST" finished-at="2020-07-23T13:39:34 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="50923" started-at="2020-07-23T13:38:43 IST" finished-at="2020-07-23T13:39:34 IST">
+      <class name="com.learnautomation.testcases.LoginTestEMS">
+        <test-method status="PASS" signature="setupSuite()[pri:0, instance:com.learnautomation.testcases.LoginTestEMS@2d6eabae]" name="setupSuite" is-config="true" duration-ms="1936" started-at="2020-07-23T13:38:41 IST" finished-at="2020-07-23T13:38:43 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Setting up reports and Test started]]>
+            </line>
+            <line>
+              <![CDATA[Setting Done - Test can be started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setupSuite -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.learnautomation.testcases.LoginTestEMS@2d6eabae]" name="setup" is-config="true" duration-ms="34429" started-at="2020-07-23T13:38:43 IST" finished-at="2020-07-23T13:39:18 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Trying to start browser and getting application ready]]>
+            </line>
+            <line>
+              <![CDATA[Browser and Application is up and running]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginapp()[pri:0, instance:com.learnautomation.testcases.LoginTestEMS@2d6eabae]" name="loginapp" duration-ms="12371" started-at="2020-07-23T13:39:18 IST" finished-at="2020-07-23T13:39:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginapp -->
+        <test-method status="PASS" signature="teardownMethod(org.testng.ITestResult)[pri:0, instance:com.learnautomation.testcases.LoginTestEMS@2d6eabae]" name="teardownMethod" is-config="true" duration-ms="2474" started-at="2020-07-23T13:39:30 IST" finished-at="2020-07-23T13:39:32 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginapp status=SUCCESS method=LoginTestEMS.loginapp()[pri:0, instance:com.learnautomation.testcases.LoginTestEMS@2d6eabae] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test is about to end]]>
+            </line>
+            <line>
+              <![CDATA[Test completed >>>>> Reports are generated]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- teardownMethod -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.learnautomation.testcases.LoginTestEMS@2d6eabae]" name="teardown" is-config="true" duration-ms="1449" started-at="2020-07-23T13:39:32 IST" finished-at="2020-07-23T13:39:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.learnautomation.testcases.LoginTestEMS -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
