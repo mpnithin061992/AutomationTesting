@@ -1,0 +1,5 @@
+2020-11-25 23:02:36,791  WARN [main] LogTestCase:17 - Just a warning message
+2020-11-25 23:02:43,618  INFO [main] LogTestCase:21 - Chrome Started
+2020-11-25 23:02:44,807  INFO [main] LogTestCase:25 - Chrome Maximised
+2020-11-25 23:02:50,131 ERROR [main] LogTestCase:29 - Page Loaded
+2020-11-25 23:02:50,408 FATAL [main] LogTestCase:33 - This is a fatal message

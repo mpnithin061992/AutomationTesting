@@ -1,0 +1,27 @@
+package javascripexe;
+
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class PageScroll 
+{
+
+	public static void main(String[] args) throws Exception 
+	{
+		System.setProperty("webdriver.chrome.driver","D:\\Users\\NMP1\\OneDrive - JNJ\\Desktop\\Nithin\\Automation\\ChromeDriver\\driver\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		
+		driver.manage().window().maximize();
+		
+		driver.get("http://manos.malihu.gr/repository/custom-scrollbar/demo/examples/complete_examples.html");
+		
+		Thread.sleep(3000);
+		
+		JavascriptExecutor js=(JavascriptExecutor) driver;
+		
+		js.executeScript("scroll(0,500)");
+
+	}
+
+}

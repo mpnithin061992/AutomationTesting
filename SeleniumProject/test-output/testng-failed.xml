@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestNG Duite]">
+  <listeners>
+    <listener class-name="retryMechnasim.Trasformer"/>
+  </listeners>
+  <test thread-count="5" name="TestNG Features(failed)">
+    <parameter name="userame" value="mpnithin1992@yahoo.in"/>
+    <parameter name="url" value="https://login.yahoo.com/"/>
+    <classes>
+      <class name="retryscript.TestngRetryScript">
+        <methods>
+          <include name="test1"/>
+          <include name="test2"/>
+        </methods>
+      </class> <!-- retryscript.TestngRetryScript -->
+    </classes>
+  </test> <!-- TestNG Features(failed) -->
+</suite> <!-- Failed suite [TestNG Duite] -->
