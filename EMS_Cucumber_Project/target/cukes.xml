@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="65.807774">
+<testcase classname="Super Admin Functionality" name="Checking the Plant addition fuctionality" time="65.807774">
+<failure message="java.lang.AssertionError: expected [true] but found [false]&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:96)&#13;&#10;&#9;at org.testng.Assert.failNotEquals(Assert.java:776)&#13;&#10;&#9;at org.testng.Assert.assertTrue(Assert.java:44)&#13;&#10;&#9;at org.testng.Assert.assertTrue(Assert.java:54)&#13;&#10;&#9;at stepDefinitions.SuperAdmin_StepDefinition.follwoing_success_message_must_be_displayed_something(SuperAdmin_StepDefinition.java:199)&#13;&#10;&#9;at ✽.follwoing success message must be displayed &quot;Plant added successfully&quot;(file:src/test/java/features/selenium.feature:15)&#13;&#10;"><![CDATA[Given User is in Home Page by entering and submitting the email id "nmp1@its.jnj.com" from JJEDS Login and having superadmin access.passed
+When User navigates to Settings page........................................passed
+And Clicks Plant icon.......................................................passed
+And clicks on Add Plant.....................................................passed
+And provides the below details in Plant Name,Serial Number,Region Name,Country Name,OPCO Name,Sector Name,Primary Owner Email,Secondary Owner Email,Description.passed
+And click on Submit.........................................................passed
+Then Esignature page must be displayed with user entering the below details.passed
+And User must able to click on sign.........................................passed
+And follwoing success message must be displayed "Plant added successfully"..failed
+
+StackTrace:
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at stepDefinitions.SuperAdmin_StepDefinition.follwoing_success_message_must_be_displayed_something(SuperAdmin_StepDefinition.java:199)
+	at ✽.follwoing success message must be displayed "Plant added successfully"(file:src/test/java/features/selenium.feature:15)
+]]></failure>
+</testcase>
+</testsuite>

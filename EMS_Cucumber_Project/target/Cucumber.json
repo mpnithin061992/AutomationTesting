@@ -1,0 +1,197 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-12-04T14:26:26.410Z",
+        "before": [
+          {
+            "result": {
+              "duration": 14438545500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeSIT()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Checking the Plant addition fuctionality",
+        "description": "",
+        "id": "super-admin-functionality;checking-the-plant-addition-fuctionality",
+        "after": [
+          {
+            "result": {
+              "duration": 3863361700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterSIT()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 22300274400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is in Home Page by entering and submitting the email id \"nmp1@its.jnj.com\" from JJEDS Login and having superadmin access",
+            "match": {
+              "arguments": [
+                {
+                  "val": "nmp1@its.jnj.com",
+                  "offset": 62
+                }
+              ],
+              "location": "SuperAdmin_StepDefinition.user_is_in_home_page_by_entering_and_submitting_the_email_id_something_from_jjeds_login_and_having_superadmin_access(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1834850900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User navigates to Settings page",
+            "match": {
+              "location": "SuperAdmin_StepDefinition.user_navigates_to_settings_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3832145200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Clicks Plant icon",
+            "match": {
+              "location": "SuperAdmin_StepDefinition.clicks_plant_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3680162400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "clicks on Add Plant",
+            "match": {
+              "location": "SuperAdmin_StepDefinition.clicks_on_add_plant()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5211854700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "provides the below details in Plant Name,Serial Number,Region Name,Country Name,OPCO Name,Sector Name,Primary Owner Email,Secondary Owner Email,Description",
+            "match": {
+              "location": "SuperAdmin_StepDefinition.provides_the_below_details_in_plant_nameserial_numberregio_namecountry_nameopco_namesector_nameprimary_owner_emailsecondary_owner_emaildescription(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Test Dummy Plant3",
+                  "800",
+                  "Region-1",
+                  "India",
+                  "Opco-1",
+                  "Sect-1",
+                  "nmp1@its.jnj.com",
+                  "sreji@its.jnj.com",
+                  "Description"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4531269800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "click on Submit",
+            "match": {
+              "location": "SuperAdmin_StepDefinition.click_on_submit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4026865500,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Esignature page must be displayed with user entering the below details",
+            "match": {
+              "location": "SuperAdmin_StepDefinition.esignature_page_must_be_displayed_with_user_entering_the_below_details(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "nmp1",
+                  "Revolution@900",
+                  "I Acknowledge",
+                  "Add Plant"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1937290400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User must able to click on sign",
+            "match": {
+              "location": "SuperAdmin_StepDefinition.user_must_able_to_click_on_sign()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected [true] but found [false]\r\n\tat org.testng.Assert.fail(Assert.java:96)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:776)\r\n\tat org.testng.Assert.assertTrue(Assert.java:44)\r\n\tat org.testng.Assert.assertTrue(Assert.java:54)\r\n\tat stepDefinitions.SuperAdmin_StepDefinition.follwoing_success_message_must_be_displayed_something(SuperAdmin_StepDefinition.java:199)\r\n\tat ✽.follwoing success message must be displayed \"Plant added successfully\"(file:src/test/java/features/selenium.feature:15)\r\n",
+              "duration": 104465000,
+              "status": "failed"
+            },
+            "line": 15,
+            "name": "follwoing success message must be displayed \"Plant added successfully\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Plant added successfully",
+                  "offset": 45
+                }
+              ],
+              "location": "SuperAdmin_StepDefinition.follwoing_success_message_must_be_displayed_something(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SuperAdmin"
+          }
+        ]
+      }
+    ],
+    "name": "Super Admin Functionality",
+    "description": "",
+    "id": "super-admin-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/selenium.feature",
+    "tags": []
+  }
+]
