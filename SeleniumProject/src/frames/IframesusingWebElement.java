@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 public class IframesusingWebElement 
 {
@@ -31,5 +32,7 @@ public class IframesusingWebElement
 		Thread.sleep(2000);
 		
 		driver.findElement(By.linkText("Click here for selenium tutorial")).click();
+		
+		
 	}
 }

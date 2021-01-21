@@ -30,7 +30,7 @@ public class Calendar_Select
 		
 		driver.findElement(By.xpath("(//button[@class='ui-datepicker-trigger'])[1]")).click();
 		
-		String date="23-November-2020";
+		String date="23-November-2021";
 		
 		String emonth=date.split("-")[1];
 		
@@ -53,7 +53,7 @@ public class Calendar_Select
 			ayear=driver.findElement(By.xpath("(//span[@class='ui-datepicker-year'])[1]")).getText().trim();
 		}
 		
-		List<WebElement> adates = driver.findElements(By.xpath("//table[@class='ui-datepicker-calendar']/tbody[1]//td"));
+		List<WebElement> adates = driver.findElements(By.xpath("//table[@class='ui-datepicker-calendar']/tbody[1]/tr/td"));
 		
 		int count=adates.size();
 		
